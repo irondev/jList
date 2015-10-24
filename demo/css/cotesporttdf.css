@@ -1,8 +1,0 @@
-.cotesport {width:616px;}
-.cotesport ul.tabs {padding:0;margin:0;}
-.cotesport ul.tabs li:first-child {margin:0;}
-.cotesport ul.tabs li {display:block;float:left;border:1px solid #e9e7e7;margin-left:1px;}
-.cotesport ul.tabs li a {color:#000000;font-family:Arial;font-size:11px;display:table-cell;height:42px;vertical-align:middle;line-height:12px;background:#e9e7e7;border:1px solid #e9e7e7;padding:8px 17px;max-width:71px;font-size:11px;font-weight:bold;text-decoration:none;}
-.cotesport ul.tabs li a:hover,
-.cotesport ul.tabs li.active a {background:#f6f3f3;border:1px solid #ffffff;}
-.cotesport .tab-content {display:none;border:1px solid #eeeeee;padding:10px;}
