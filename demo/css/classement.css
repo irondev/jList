@@ -1,0 +1,20 @@
+.classements {position:relative;width:300px;}
+.classements .vscroll { height:150px;}
+.classements a {text-decoration:none;}
+.classements ul {margin:0;padding:0;}
+.classements li {list-style:none;line-height:30px;height:30px;background:#e9e7e7;}
+.classements li.loader {background:#ffffff url("../img/loader.gif") no-repeat center;}
+.classements li span.rank {width:20px;text-align:left;font-weight:bold;padding-left:7px ;}
+.classements li span.name {/*width:140px;*/text-align:left;padding-right:4px ;}
+.classements li span.name a {padding-left:8px; text-decoration:none;}
+.classements li span.team {width:27px;text-align:left;font-weight:bold;}
+.classements li span.time {text-align:right;padding-right:19px ;}
+/*.classements div a:hover { background-color:#d6d6d6;}
+.classements div a.disabled:hover { background-color:#efefef;}*/
+.classements a.linext, .classements a.liprev {position:absolute;width:299px;margin-right:1px;height:19px;background:#efefef;}
+.classements a.linext span, .classements a.liprev span {display:block;width:299px;height:19px;text-decoration: none;}
+.classements a.linext.disabled span, .classements a.liprev.disabled span{opacity:0.2;/*filter:alpha(opacity=50);*/}
+.classements a.liprev {margin-top:-20px;border-bottom:1px solid #d6d6d6;}
+.classements a.liprev span {background-image: url("http://www.letour.fr/le-tour/img/sprite_layout.png"); background-repeat:no-repeat; background-position:center -338px;}
+.classements a.linext  {bottom:-20px;border-top:1px solid #d6d6d6;}
+.classements a.linext span {background-image: url("http://www.letour.fr/le-tour/img/sprite_layout.png"); background-repeat:no-repeat; background-position:center -358px;}

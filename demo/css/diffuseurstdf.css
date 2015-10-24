@@ -1,0 +1,38 @@
+.diffuseurs {position:relative;width:585px;height:289px;margin-bottom:42px;background:#ffffff;border-bottom:3px solid #000000;border-left:1px solid #dadada;border-right:1px solid #dadada;}
+.diffuseurs .head {position:relative;height:36px;margin-top:-36px;width:585px;background:#232323;color:#ffffff;}
+.diffuseurs .head .title {display:block;padding-left:45px;line-height:36px;color:#ffffff;font-family:"FFDIN Bold";font-size:15px;text-transform:uppercase;background:url("http://www.letour.fr/le-tour/img/sprite_layout.png") no-repeat -104px -415px;}
+.diffuseurs .head .paging {white-space:nowrap;position:absolute;top:0;right:64px;margin:15px 18px 0 0;font-size:9px;}
+.diffuseurs .head .paging a {text-decoration:none;color:#ffffff;padding:0 2px;}
+.diffuseurs .head .paging a.current {color:#fabb00;cursor:default;}
+.diffuseurs .head .paging a.liprev {background:url("http://www.letour.fr/le-tour/img/sprite_layout.png") no-repeat 0 -413px;padding-right:8px;}
+.diffuseurs .head .paging a.linext {background:url("http://www.letour.fr/le-tour/img/sprite_layout.png") no-repeat -8px -413px;padding-left:8px;}
+.diffuseurs .head .paging a.linext.disabled,
+.diffuseurs .head .paging a.liprev.disabled {cursor:default;opacity:0.5;filter:alpha(opacity=50);}
+.diffuseurs .vscroll {height:253px;overflow:hidden;padding-top:36px;}
+.diffuseurs ul.list {margin:0;padding:0;}
+.diffuseurs ul.list li {display:block;float:left;width:290px;height:42px;border:none;}
+.diffuseurs ul.list li.odd {border-right:1px solid #dadada;}
+.diffuseurs ul.list li a {font-size:11px;line-height:42px;margin:0 12px;padding:0 10px;border:none;border-bottom:1px solid #dadada; font-family:Tahoma, Geneva, sans-serif;}
+.diffuseurs ul.list li a:hover {margin:0 12px 0 1px; border-left:11px solid #fabb00;}
+.diffuseurs ul.list li .logo {display:inline-block;float:left;width:50px;height:25px;margin:10px 15px 0 0;}
+.diffuseurs ul.list li.francetv .logo {background:url("http://www.letour.fr/le-tour/img/sprite_partners.png") no-repeat -151px -828px;}
+.diffuseurs ul.list li.eurosport .logo {background:url("http://www.letour.fr/le-tour/img/sprite_partners.png") no-repeat -151px -4189px;}
+.diffuseurs ul.list li.cctv .logo {background:url("http://www.letour.fr/le-tour/img/sprite_partners.png") no-repeat -151px -3694px;}
+.diffuseurs ul.list li.rds .logo {background:url("http://www.letour.fr/le-tour/img/sprite_partners.png") no-repeat -151px -3719px;}
+.diffuseurs ul.list li.rtl .logo {background:url("http://www.letour.fr/le-tour/img/sprite_partners.png") no-repeat -151px -3744px;}
+.diffuseurs ul.list li.rtv .logo {background:url("http://www.letour.fr/le-tour/img/sprite_partners.png") no-repeat -151px -3769px;}
+.diffuseurs ul.list li.sbs .logo {background:url("http://www.letour.fr/le-tour/img/sprite_partners.png") no-repeat -151px -3794px;}
+.diffuseurs ul.list li.supertsport .logo {background:url("http://www.letour.fr/le-tour/img/sprite_partners.png") no-repeat -151px -3819px;}
+.diffuseurs ul.list li.la1 .logo {background:url("http://www.letour.fr/le-tour/img/sprite_partners.png") no-repeat -151px -3844px;}
+.diffuseurs ul.list li.teledeporte .logo {background:url("http://www.letour.fr/le-tour/img/sprite_partners.png") no-repeat -151px -3869px;}
+.diffuseurs ul.list li.sporza .logo {background:url("http://www.letour.fr/le-tour/img/sprite_partners.png") no-repeat -151px -3894px;}
+.diffuseurs ul.list li.jsport .logo {background:url("http://www.letour.fr/le-tour/img/sprite_partners.png") no-repeat -151px -3943px;}
+.diffuseurs ul.list li.rtp .logo {background:url("http://www.letour.fr/le-tour/img/sprite_partners.png") no-repeat -151px -3969px;}
+.diffuseurs ul.list li.tg4 .logo {background:url("http://www.letour.fr/le-tour/img/sprite_partners.png") no-repeat -151px -3919px;}
+.diffuseurs ul.list li.espn .logo {background:url("http://www.letour.fr/le-tour/img/sprite_partners.png") no-repeat -151px -3994px;}
+.diffuseurs ul.list li.nbc .logo {background:url("http://www.letour.fr/le-tour/img/sprite_partners.png") no-repeat -151px -4019px;}
+.diffuseurs ul.list li.itv .logo {background:url("http://www.letour.fr/le-tour/img/sprite_partners.png") no-repeat -151px -4044px;}
+.diffuseurs ul.list li.tv2 .logo {background:url("http://www.letour.fr/le-tour/img/sprite_partners.png") no-repeat -151px -4069px;}
+.diffuseurs ul.list li.noc .logo {background:url("http://www.letour.fr/le-tour/img/sprite_partners.png") no-repeat -151px -4114px;}
+.diffuseurs ul.list li.rsi .logo {background:url("http://www.letour.fr/le-tour/img/sprite_partners.png") no-repeat -151px -4139px;}
+.diffuseurs ul.list li.sfs .logo {background:url("http://www.letour.fr/le-tour/img/sprite_partners.png") no-repeat -151px -4164px;}
