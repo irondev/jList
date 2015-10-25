@@ -25,7 +25,9 @@
 				'auto' : 0, // 1000 = 1sec, 0 = false
 				'loop' : false, // true to enable (force move to 1)
 				'arrows' : true, // true/false or DOM elements
-				'nav' : false // false or DOM element
+				'nav' : false, // false or DOM element
+				'currentPaging' : false, // false or DOM element
+				'totalPaging' : false // false or DOM element
 			}, options);
 			if (settings.loop && settings.move != 1) settings.move = 1;
 			/* init */
@@ -63,6 +65,14 @@
 			if (listSize > visibleSize && settings.arrows) $(next).removeClass("disabled");
 			if (!settings.arrows) $(arrows).hide();
 			var currentItem = (settings.active == 'random') ? Math.round(Math.random() * 100)%itemNum : settings.active;
+			if (typeof settings.totalPaging === 'object') {
+				var totalPaging = Math.ceil(listSize / slideSize);
+				$(settings.totalPaging).text(totalPaging);
+			}
+			if (typeof settings.currentPaging === 'object') {
+				var currentPaging = Math.ceil((currentItem + 1) * itemSize / slideSize);
+				$(settings.currentPaging).text(currentPaging);
+			}
 			/* events */
 			$(list).find("li").off("click");
 			$(list).find("li").on("click", function() {
@@ -110,6 +120,7 @@
 								}
 							});
 						} else if (listOffset < 0) {
+							currentPaging--;
 							$(list).addClass("animate");
 							if (slideSize > Math.abs(listOffset)) marginAnimateObj = (settings.position == 'vertical') ? {marginTop: "+=" + Math.abs(listOffset) + "px"} : {marginLeft: "+=" + Math.abs(listOffset) + "px"};
 							$(list).animate(marginAnimateObj, settings.speed, function () {
@@ -138,6 +149,7 @@
 								}
 							});
 						} else if (Math.abs(listOffset) < listSize - visibleSize) {
+							currentPaging++;
 							$(list).addClass("animate");
 							$(list).animate(marginAnimateObj, settings.speed, function () {
 								$(list).removeClass("animate");
@@ -150,6 +162,9 @@
 								}
 							});
 						}
+					}
+					if (typeof settings.currentPaging === 'object') {
+						$(settings.currentPaging).text(currentPaging);
 					}
 				}
 				return false;
@@ -194,6 +209,7 @@
 				}, settings.auto);
 			}
 			/* return */
+			$(list).data("itemNum", 10);
 			return $(list);
 		},
 		scroll : function(options) {

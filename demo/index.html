@@ -60,6 +60,7 @@
 				<li class="disabled"><a href="#">J38</a></li>
 			</ul>
 		</div>
+		<span class="journees-current"></span> / <span class="journees-total"></span>
 	</div>
 		
 	<h3>jList('slide', {move:2, speed:'fast'})</h3>
@@ -607,7 +608,10 @@
 <script src="js/jquery.jlist.min.js"></script>
 <script>
 $(function () {
-	$(".VideoNav:first .hscroll ul.journees").jList('slide');
+	var list = $(".VideoNav:first .hscroll ul.journees").jList('slide', {
+		currentPaging:$(".VideoNav:first .journees-current"),
+		totalPaging:$(".VideoNav:first .journees-total")
+	});
 	$(".VideoNav .hscroll.scope ul.journees").jList('slide', {move:2, speed:'fast'});
 	$(".VideoNav .hscroll.loop ul.journees").jList('slide', {loop:true});
 	$(".VideoNav .hscroll.autoscroll-loop ul.journees").jList('slide', {auto:2000, loop:true});
