@@ -1,6 +1,8 @@
-jList 1.4
+jList 1.4.1
 
 * ChangeLog:
+* v1.4.1 (25/10/2015)
+* - new options for slide : option {currentPaging:false|DOM element, totalPaging:false|DOM element}
 * v1.4 (01/04/2014)
 * - new option for slide : option {nav:false|DOM element}
 * v1.3.1 (07/03/2014)

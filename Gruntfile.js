@@ -14,11 +14,11 @@ module.exports = function(grunt) {
 
         uglify: {
             options: {
-                sourceMap:true,
-                sourceMapIncludeSources: true,
+                sourceMap:false,
                 mangle: false,
                 compress: {},
-                beautify: false
+                beautify: false,
+                preserveComments: 'some'
             },
             default: {
                 files: [{
